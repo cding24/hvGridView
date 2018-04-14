@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PageGridView">
+        <!-- 行数，如果为0表示横向Gridview -->
+        <attr name="PageRows" format="integer" />
+        <!-- 列数,如果为0表示纵向Gridview -->
+        <attr name="PageColums" format="integer" />
+        <attr name="PageDivider" format="reference" />
+    </declare-styleable>
+</resources>

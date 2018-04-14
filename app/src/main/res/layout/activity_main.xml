@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3000dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#888888"
+            android:gravity="center"
+            android:text="4列纵向"
+            android:textColor="#ffffff" />
+
+        <com.linghu.gridview.PageGridView
+            android:id="@+id/pagingGridView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:PageColums="4"
+            app:PageDivider="@drawable/gridview_divider_bg"
+            app:PageRows="0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#888888"
+            android:gravity="center"
+            android:text="2行4列横向"
+            android:textColor="#ffffff" />
+
+        <com.linghu.gridview.PageGridView
+            android:id="@+id/pagingGridView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:PageColums="4"
+            app:PageDivider="@drawable/gridview_divider_bg"
+            app:PageRows="2" />
+
+        <com.linghu.gridview.MyPageIndicator
+            android:id="@+id/pageindicator"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#EEEEEE"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#888888"
+            android:gravity="center"
+            android:text="2行不分页"
+            android:textColor="#ffffff" />
+
+        <com.linghu.gridview.PageGridView
+            android:id="@+id/pagingGridView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:PageColums="0"
+            app:PageDivider="@drawable/gridview_divider_bg"
+            app:PageRows="2" />
+    </LinearLayout>
+
+</ScrollView>
